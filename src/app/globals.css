@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Light Mode Colors */
+  --background: #e0e5ec;
+  --foreground: #4a5568;
+  --primary: #6b7c93;
+
+  /* Neomorphic Light Shadows */
+  --shadow-neo: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+  --shadow-neo-sm: 5px 5px 10px rgb(163, 177, 198, 0.6), -5px -5px 10px rgba(255, 255, 255, 0.5);
+  --shadow-neo-pressed: inset 6px 6px 10px 0 rgba(163, 177, 198, 0.7), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.8);
+}
+
+.dark {
+  /* Dark Mode Colors */
+  --background: #1a1b1e;
+  --foreground: #aec1d6;
+  --primary: #4a5568;
+
+  /* Neomorphic Dark Shadows */
+  --shadow-neo: 5px 5px 10px #0b0c10, -5px -5px 10px #292d34;
+  --shadow-neo-sm: 3px 3px 6px #0b0c10, -3px -3px 6px #292d34;
+  --shadow-neo-pressed: inset 5px 5px 10px #0b0c10, inset -5px -5px 10px #292d34;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+
+  --shadow-neo: var(--shadow-neo);
+  --shadow-neo-sm: var(--shadow-neo-sm);
+  --shadow-neo-pressed: var(--shadow-neo-pressed);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+/* Custom Utilities for Neomorphism */
+@layer utilities {
+  .neo-card {
+    background: var(--background);
+    box-shadow: var(--shadow-neo);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .neo-btn {
+    background: var(--background);
+    box-shadow: var(--shadow-neo-sm);
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+  }
+
+  .neo-btn:active {
+    box-shadow: var(--shadow-neo-pressed);
+    transform: scale(0.98);
+  }
+
+  .neo-inset {
+    box-shadow: var(--shadow-neo-pressed);
+  }
+}
