@@ -38,7 +38,7 @@ export default function Contact() {
             </div>
 
             <p className="text-center mt-12 text-[var(--foreground)]/60 text-sm">
-                © {new Date().getFullYear()} Rakshith. Built with Next.js & Neomorphism.
+                © {new Date().getFullYear()} KarthikEstasiddhi. Built with passion.
             </p>
         </section>
     );
