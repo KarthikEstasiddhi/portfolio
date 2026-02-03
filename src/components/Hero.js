@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaUserGraduate } from "react-icons/fa";
-
+import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaUserGraduate } from "react-icons/fa";
+import Image from "next/image";
 export default function Hero() {
     return (
         <section id="hero" className="min-h-screen flex items-center justify-center pt-16 md:pt-0">
@@ -25,7 +25,7 @@ export default function Hero() {
                     {/* Social Links */}
                     <div className="flex gap-5 justify-center md:justify-start pt-4">
                         <a
-                            href="https://github.com"
+                            href="https://github.com/KarthikEstasiddhi"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="neo-btn w-14 h-14 flex items-center justify-center text-2xl rounded-full hover:text-[var(--primary)] hover:-translate-y-1 transition-all"
@@ -43,13 +43,13 @@ export default function Hero() {
                             <FaLinkedin />
                         </a>
                         <a
-                            href="https://twitter.com"
+                            href="https://instagram.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="neo-btn w-14 h-14 flex items-center justify-center text-2xl rounded-full hover:text-[var(--primary)] hover:-translate-y-1 transition-all"
-                            aria-label="Twitter"
+                            aria-label="Instagram"
                         >
-                            <FaTwitter />
+                            <FaInstagram />
                         </a>
                         <a
                             href="mailto:estasiddhikarthik@gmail.com"
@@ -73,10 +73,10 @@ export default function Hero() {
                 {/* Right Side - Image/Profile */}
                 <div className="order-1 md:order-2 flex justify-center md:justify-end">
                     <div className="relative">
-                        <div className="w-64 h-64 md:w-96 md:h-96 rounded-full neo-card flex items-center justify-center p-4 animate-float overflow-hidden">
-                            <div className="w-full h-full rounded-full bg-gradient-to-br from-[var(--background)] to-[var(--background)] shadow-inner flex items-center justify-center overflow-hidden text-[var(--foreground)]/30">
+                        <div className="w-64 h-64 md:w-96 md:h-96  neo-card flex items-center justify-center p-4 animate-float overflow-hidden">
+                            <div className="w-full h-full rounded-xl  bg-gradient-to-br from-[var(--background)] to-[var(--background)] shadow-inner flex items-center justify-center overflow-hidden text-[var(--foreground)]/30">
                                 {/* Placeholder for actual image */}
-                                <FaUserGraduate size={120} />
+                                <img src="/images/hero/profile.png" alt="Profile" className="w-full h-full object-cover" />
                             </div>
                         </div>
                         {/* Decorative Elements */}
