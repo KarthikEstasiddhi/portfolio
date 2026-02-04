@@ -11,22 +11,22 @@ export default function Work() {
             title: "CCTV Surveillance Analysis",
             desc: "Real-time video surveillance system detecting 15+ individuals per frame. Achieved 40% performance improvement via GPU acceleration.",
             tags: ["Python", "OpenCV", "YOLOv8", "NetworkX"],
-            link: "#",
-            icon: <FaLaptopCode />
+            link: "https://github.com/KarthikEstasiddhi/CCTV_Analysis",
+            icon: <img src="/images/projects/cctvimage.png" alt="CCTV Surveillance Analysis" className="w-full h-full object-cover" />
         },
         {
             title: "Eco-Sense: Smart Waste Management",
             desc: "Designed smart dustbins with ultrasonic sensors, GPS, and WiFi for real-time monitoring and route optimization.",
             tags: ["IoT", "Ultrasonic Sensors", "GPS", "WiFi"],
             link: "#",
-            icon: <FaRecycle />
+            icon: <img src="/images/projects/ecosense.png" alt="Eco-Sense: Smart Waste Management" className="w-full h-full object-cover" />
         },
         {
             title: "Hospitality Revenue Dashboard",
             desc: "Power BI dashboard analyzing 3 months of revenue data. Provided insights targeting potential 20% recovery in revenue.",
             tags: ["Power BI", "Excel", "Data Analysis"],
-            link: "#",
-            icon: <FaChartBar />
+            link: "https://github.com/KarthikEstasiddhi/Hospitality_domain",
+            icon: <img src="/images/projects/dashboard.png" alt="Hospitality Revenue Dashboard" className="w-full h-full object-cover" />
         }
     ];
 
@@ -35,7 +35,7 @@ export default function Work() {
             title: "Integrating Machine Learning and Deep Learning for Compressive Strength Prediction",
             conference: "ICDCC-2024 (IEEE)",
             abstract: "Presented and published at the 1st International Conference on Data, Computation, and Communication. Explored hybrid models for material strength analysis.",
-            link: "#"
+            link: "https://ieeexplore.ieee.org/document/10961117"
         }
     ];
 
@@ -67,7 +67,7 @@ export default function Work() {
                     projects.map((proj, idx) => (
                         <div key={idx} className="neo-card p-8 flex flex-col hover:scale-[1.02] transition-transform group">
                             <div className="h-48 bg-gray-300/10 rounded-xl mb-6 flex items-center justify-center neo-inset group-hover:shadow-inner transition-shadow overflow-hidden">
-                                <span className="text-5xl opacity-40 text-[var(--primary)]">
+                                <span className="w-full h-full flex items-center justify-center text-[var(--primary)]">
                                     {proj.icon}
                                 </span>
                             </div>

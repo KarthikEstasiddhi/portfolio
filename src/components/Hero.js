@@ -9,9 +9,6 @@ export default function Hero() {
                 {/* Left Side - Text Content */}
                 <div className="order-2 md:order-1 text-center md:text-left space-y-8">
                     <div>
-                        <h2 className="text-xl md:text-2xl font-medium text-[var(--primary)] uppercase tracking-wide mb-2">
-                            Computer Science Student
-                        </h2>
                         <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-shadow-neo leading-tight">
                             Hi, I&apos;m <br /> <span className="text-[var(--primary)]">Estasiddhi Karthik</span>
                         </h1>
@@ -34,7 +31,7 @@ export default function Hero() {
                             <FaGithub />
                         </a>
                         <a
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/karthik-estasiddhi/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="neo-btn w-14 h-14 flex items-center justify-center text-2xl rounded-full hover:text-[var(--primary)] hover:-translate-y-1 transition-all"
@@ -43,7 +40,7 @@ export default function Hero() {
                             <FaLinkedin />
                         </a>
                         <a
-                            href="https://instagram.com"
+                            href="https://www.instagram.com/karthik_estasiddhi/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="neo-btn w-14 h-14 flex items-center justify-center text-2xl rounded-full hover:text-[var(--primary)] hover:-translate-y-1 transition-all"
